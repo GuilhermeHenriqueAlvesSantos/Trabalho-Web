@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,500&display=swap');
+
+
+* {
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    position: relative;
+    max-width: 150px;
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+header .logo:hover{
+    scale: 1.1;
+}
+
+header .navagation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navagation ul{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+header .navagation li{
+    list-style: none;
+    color: #FFF;
+}
+
+header .navagation li a:hover{
+    background-color: #4b4;
+    scale: 1.1;
+}
+
+
+header .navagation li a{
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: 100px;
+    background-color: #292;
+    border-radius: 15px;
+    text-align: start;
+    padding: 5px 10px 5px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+main{
+    padding: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+/*  Cartão Produtos */
+.card-product{
+    box-shadow: 12px 12px 2px 1px rgba(0, 150, 0, .5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F1F1F1;
+    color: #1a1a1a;
+    height: 500px;
+    width: 200px;
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-basis: 200;
+
+}
+
+.card-product span{
+    transition: 0.3s ease-in-out;
+    background-color: rgb(0, 145, 241);
+    padding: 5px;
+    font-weight: 900;
+    scale: 0.9;
+}
+
+.card-product span:hover{
+    scale: 1;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .3);
+}
+
+.card-product span a{
+    color: #FFF;
+}
+.card-product h1{
+    font-family: 'Prompt', sans-serif; 
+    color: #000;
+    font-size: small;
+}
+.card-product h2, span a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #1a1a1a;
+    font-size: medium;
+}
+
+.card-product button{
+    width: 150px;
+    height: 40px;
+    background-color: #070;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+.card-product button:hover{
+    scale: 1.1;
+    background-color: #4b4;
+    
+}
+.card-product img{
+    width: 150px;
+
+}
+
+.horizontal-row{
+    height: 1px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.circle{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    clip-path: circle(50% at bottom right);
+}
+
+img[alt="trator"] {
+    position: relative;
+right: -350px;
+top: 10px;
+width: 80vh;
+}
+
+.container{
+    padding-left: 1rem;    
+    position: absolute;
+    left: 25px;
+    top: 30vh;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+}
+.container *{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .text{
+    position: relative;
+    max-width: 600px;
+    background-color: #f1f1f1;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container .text h2{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+.container .text h2 span{
+    font-size: 2.5em;
+    color: greenyellow;
+}
+.container .text p{
+    color: #000;
+}
+
+.container .text a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: green;
+    color: #fff;
+    font: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.container .text a:hover{
+    scale: 1.1;
+}
+
+
+.card-profile {
+    min-width: 75vh;
+    min-height: 75vh;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 150, 0, .7);
+}
+.card-profile h1, h3{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+    img[alt="perfil"]{
+    width: 150px;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+}
+
+img[alt="perfil"]:hover{
+    scale: 1.1;
+    transform: rotate(360deg)
+}
+
+.card-profile-socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    align-self: flex-end;
+  }
+
+  .card-profile-socials img {
+    width: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.card-profile-socials img:hover {
+    scale: 1.1;
+}
+ 
+
+/*Formulário para contato*/
+  
+  .form-div {
+
+    border-radius: 3px;
+
+    padding: 0 3rem 0 3rem;
+
+    background: #f1f1f1;
+
+    width: 80%;
+
+    height: 85vh;
+
+    display: flex;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    margin: 30px 0 50px 0;
+
+}
+
+ 
+
+ 
+
+.form {
+
+    width: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #fff;
+
+    padding: 3rem;
+
+}
+
+ 
+
+.cabecalho-formulario {
+
+    margin: 3rem 0 3rem 3rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+ 
+
+.form-header h1::after {
+
+    content: '';
+
+    display: block;
+
+    width: 5rem;
+
+    height: 0.3rem;
+
+    background-color: #070;
+
+    margin: 0 auto;
+
+    position: absolute;
+
+    border-radius: 10px;
+
+}
+.titulo-formulario h1 {
+    color: #444;
+}
+ 
+
+.input-group {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    padding: 1rem 0;
+
+}
+
+ 
+
+.input-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 1.1rem;
+
+}
+
+ 
+
+.input-box input {
+
+    margin: 0.6rem 0;
+
+    padding: 0.8rem 1.2rem;
+
+    border: none;
+
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 6px #0000001c;
+
+    font-size: 0.8rem;
+
+}
+
+ 
+
+.input-box input:hover {
+
+    background-color: #eeeeee75;
+
+}
+
+ 
+
+.input-box input:focus-visible {
+
+    outline: 1px solid #292;
+
+}
+
+ 
+
+.input-box label,
+
+.gender-title h6 {
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    color: #000000c0;
+
+}
+
+ 
+
+.input-box input::placeholder {
+
+    color: #000000be;
+
+}
+
+ 
+
+.gender-group {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 0.62rem;
+
+    padding: 0 .5rem;
+
+}
+
+ 
+
+.gender-input {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+ 
+
+.gender-input input {
+
+    margin-right: 0.35rem;
+
+}
+
+ 
+
+.gender-input label {
+
+    font-size: 0.81rem;
+
+    font-weight: 600;
+
+    color: #000000c0;
+
+}
+
+ 
+
+.continue-button button {
+
+    width: 100%;
+
+    margin-top: 2.5rem;
+
+    border: none;
+
+    background-color: #070;
+
+    padding: 0.62rem;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+ 
+
+.continue-button button:hover {
+
+    background-color: #4b4;
+
+}
+
+ 
+
+.continue-button button a {
+
+    text-decoration: none;
+
+    font-size: 0.93rem;
+
+    font-weight: 500;
+
+    color: #fff;
+
+}
+
+ 
+
+@media screen and (max-width: 1330px) {
+
+    .form-image {
+
+        display: none;
+
+    }
+
+    .container {
+
+        width: 50%;
+
+    }
+
+    .form {
+
+        width: 100%;
+
+    }
+
+}
+
+ 
+
+@media screen and (max-width: 1064px) {
+
+    .container {
+
+        width: 90%;
+
+        height: auto;
+
+    }
+
+    .input-group {
+
+        flex-direction: column;
+
+        z-index: 5;
+
+        padding-right: 5rem;
+
+        max-height: 10rem;
+
+        overflow-y: scroll;
+
+        flex-wrap: nowrap;
+
+    }
+
+    .gender-inputs {
+
+        margin-top: 2rem;
+
+    }
+
+    .gender-group {
+
+        flex-direction: column;
+
+    }
+
+    .gender-title h6 {
+
+        margin: 0;
+
+    }
+
+    .gender-input {
+
+        margin-top: 0.5rem;
+
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    flex-grow: 1;
+    flex-basis: 200;
+
+}
+
